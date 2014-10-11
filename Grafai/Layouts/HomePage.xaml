@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Grafai.Layouts.HomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="900">
+    <Grid Name="MainLayout" Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" >
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200px" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Name="MainList" Grid.Column="0" Grid.Row="0" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+
+        
+        <Border Background="WhiteSmoke" BorderBrush="Black" Grid.Column="1" Grid.RowSpan="2" BorderThickness="3,0,0,0" >
+            <StackPanel  Name="RecentItems">
+                <TextBlock HorizontalAlignment="Center" FontSize="20"> Neseniai žiūrėti</TextBlock>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
